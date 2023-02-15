@@ -1,0 +1,83 @@
+<html>
+
+<head>
+    <title>Document</title>
+    <script src="js/bill.js"></script>
+    <STYLE>
+        input:hover {
+
+            box-shadow: 3px 3px black;
+            font-size: 15px
+        }
+    </STYLE>
+
+
+</head>
+
+<body>
+    <center>
+        <table width="500px" height="600px" bgcolor="beige" cellspacing="10" cellpadding="10">
+            <tr>
+                <td colspan="2" align="center">
+                    Category of Items:
+                    <select id="items" onchange="dofill();">
+                        <option>Select</option>
+                        <option>TV</option>
+                        <option>Laptop</option>
+                        <option>mobile</option>
+                        <option>AC</option>
+                        <option>Refrigirator</option>
+                        <option>Washing Machine</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Choose brand:
+                    <select id="brand" size="5" ondblclick="docart(brand,price);">
+                        <option value="none"> Preffered Brand</option>
+                    </select>
+                </td>
+
+                <td>
+                    Price:
+                    <select id="price" size="5">
+                        <option value="none">Price in Rs</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Amount:
+                    <select id="cartprice" size="5">
+                        <option>none</option>
+
+                    </select>
+                </td>
+
+                <td>
+                    Cart:
+                    <select id="cartbrand" size="5">
+                        <option>None</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" height="50px" align="center"><input type="button" value="BILL" id="btn" onclick="dobill();"
+                        style=" background-color:burlywood ; width:80px; "></td>
+            </tr>
+
+            <tr>
+                <td colspan="2" height="100px" align="center"><input type="text"  id="bill">
+                </td>
+            </tr>
+
+        </table>
+    </center>
+
+</body>
+
+</html>
